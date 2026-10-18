@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en" data-lang="en" data-title-it="Pagina non trovata — VibeLabz" data-title-en="Page not found — VibeLabz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page not found — VibeLabz</title>
+  <script>
+    (function () {
+      var r = document.documentElement, l = null;
+      try { l = new URLSearchParams(location.search).get('lang'); } catch (e) {}
+      if (l !== 'it' && l !== 'en') { try { l = localStorage.getItem('vl-lang'); } catch (e) {} }
+      if (l !== 'it' && l !== 'en') { l = /^it\b/i.test(navigator.language || '') ? 'it' : 'en'; }
+      r.setAttribute('data-lang', l); r.lang = l; r.className += ' js';
+      var t = r.getAttribute('data-title-' + l); if (t) document.title = t;
+    })();
+  </script>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#6d28d9">
+  <link rel="icon" href="/assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/style.css">
+  <script src="/assets/site.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="/" aria-label="VibeLabz home">
+        <img src="/assets/logo.svg" alt="" width="32" height="32">
+        VibeLabz
+      </a>
+      <nav class="nav" aria-label="Main">
+        <a href="/privacy/">Privacy</a>
+        <span class="lang-switch" role="group" aria-label="Language / Lingua">
+          <button type="button" data-set-lang="it" aria-pressed="false">IT</button>
+          <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
+        </span>
+      </nav>
+    </div>
+  </header>
+
+  <main class="not-found">
+    <div class="container">
+      <p class="code gradient-text">404</p>
+      <h1>
+        <span lang="it">Questo esperimento non è riuscito.</span>
+        <span lang="en">This experiment didn't work out.</span>
+      </h1>
+      <p class="muted">
+        <span lang="it">La pagina che cerchi non esiste o è stata spostata.</span>
+        <span lang="en">The page you're looking for doesn't exist or has moved.</span>
+      </p>
+      <div class="actions">
+        <a class="btn btn-primary" href="/"><span lang="it">Torna alla home</span><span lang="en">Back to home</span></a>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

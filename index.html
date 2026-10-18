@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en" data-lang="en" data-title-it="VibeLabz — Piccole app, buone vibes" data-title-en="VibeLabz — Small apps, good vibes">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VibeLabz — Small apps, good vibes</title>
+  <script>
+    (function () {
+      var r = document.documentElement, l = null;
+      try { l = new URLSearchParams(location.search).get('lang'); } catch (e) {}
+      if (l !== 'it' && l !== 'en') { var h = /^#(it|en)-/.exec(location.hash); if (h) l = h[1]; }
+      if (l !== 'it' && l !== 'en') { try { l = localStorage.getItem('vl-lang'); } catch (e) {} }
+      if (l !== 'it' && l !== 'en') { l = /^it\b/i.test(navigator.language || '') ? 'it' : 'en'; }
+      r.setAttribute('data-lang', l); r.lang = l; r.className += ' js';
+      var t = r.getAttribute('data-title-' + l); if (t) document.title = t;
+    })();
+  </script>
+  <meta name="description" content="VibeLabz is the tiny app lab of Simone Recchia: simple, lightweight mobile apps made for fun and useful to everyone. No accounts, no tracking.">
+  <meta name="author" content="Simone Recchia">
+  <meta name="theme-color" content="#6d28d9">
+  <link rel="canonical" href="https://vibelabz.simonerecchia.com/">
+  <link rel="icon" href="/assets/logo.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="VibeLabz">
+  <meta property="og:title" content="VibeLabz — Small apps, good vibes">
+  <meta property="og:description" content="Simple, lightweight mobile apps made for fun and useful to everyone. No accounts, no tracking.">
+  <meta property="og:url" content="https://vibelabz.simonerecchia.com/">
+  <link rel="stylesheet" href="/assets/style.css">
+  <script src="/assets/site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main"><span lang="it">Vai al contenuto</span><span lang="en">Skip to content</span></a>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="/" aria-label="VibeLabz home">
+        <img src="/assets/logo.svg" alt="" width="32" height="32">
+        VibeLabz
+      </a>
+      <nav class="nav" aria-label="Main">
+        <a class="nav-hide-sm" href="#apps">App</a>
+        <a class="nav-hide-sm" href="#about"><span lang="it">Chi sono</span><span lang="en">About</span></a>
+        <a class="nav-hide-xs" href="#contact"><span lang="it">Contatti</span><span lang="en">Contact</span></a>
+        <a href="/privacy/">Privacy</a>
+        <span class="lang-switch" role="group" aria-label="Language / Lingua">
+          <button type="button" data-set-lang="it" aria-pressed="false">IT</button>
+          <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
+        </span>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">
+          <span class="dot" aria-hidden="true"></span>
+          <span lang="it">Laboratorio indipendente di app</span>
+          <span lang="en">Independent app lab</span>
+        </p>
+        <h1>
+          <span lang="it">Piccole app, <span class="gradient-text">buone vibes.</span></span>
+          <span lang="en">Small apps, <span class="gradient-text">good vibes.</span></span>
+        </h1>
+        <p class="lead">
+          <span lang="it">VibeLabz è il laboratorio di Simone Recchia: qui nascono app semplici e leggere, create per divertimento e pensate per essere utili a tutti. Niente account, niente tracciamento, niente fronzoli.</span>
+          <span lang="en">VibeLabz is Simone Recchia's tiny app lab: simple, lightweight apps made for fun and designed to be useful to everyone. No accounts, no tracking, no clutter.</span>
+        </p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#apps"><span lang="it">Scopri le app</span><span lang="en">See the apps</span></a>
+          <a class="btn btn-ghost" href="#contact"><span lang="it">Scrivimi</span><span lang="en">Get in touch</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="principles-title">
+      <div class="container">
+        <h2 class="section-title" id="principles-title">
+          <span lang="it">Come le costruisco</span>
+          <span lang="en">How I build them</span>
+        </h2>
+        <p class="section-sub">
+          <span lang="it">Quattro regole che valgono per ogni app di VibeLabz.</span>
+          <span lang="en">Four rules that apply to every VibeLabz app.</span>
+        </p>
+        <div class="grid">
+          <article class="card">
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r=".5" fill="currentColor"/></svg>
+            </div>
+            <h3><span lang="it">Semplici</span><span lang="en">Simple</span></h3>
+            <p>
+              <span lang="it">Ogni app fa una cosa sola, e la fa bene. Si apre e si usa, senza tutorial.</span>
+              <span lang="en">Each app does one thing and does it well. Open it and use it, no tutorial needed.</span>
+            </p>
+          </article>
+          <article class="card">
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 8.5-7 10-4-1.5-7-5.5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg>
+            </div>
+            <h3><span lang="it">Rispettose della privacy</span><span lang="en">Private by default</span></h3>
+            <p>
+              <span lang="it">Nessuna registrazione. I tuoi dati restano sul tuo telefono e non vengono raccolti né venduti.</span>
+              <span lang="en">No sign-up. Your data stays on your phone and is never collected or sold.</span>
+            </p>
+          </article>
+          <article class="card">
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg>
+            </div>
+            <h3><span lang="it">Leggere</span><span lang="en">Lightweight</span></h3>
+            <p>
+              <span lang="it">Sviluppate con React Native: veloci, piccole e funzionanti anche offline quando possibile.</span>
+              <span lang="en">Built with React Native: fast, small and working offline whenever possible.</span>
+            </p>
+          </article>
+          <article class="card">
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6"/><path d="M10 3v6l-5 9a2 2 0 0 0 1.7 3h10.6a2 2 0 0 0 1.7-3l-5-9V3"/><path d="M7.5 15h9"/></svg>
+            </div>
+            <h3><span lang="it">Fatte per divertimento</span><span lang="en">Made for fun</span></h3>
+            <p>
+              <span lang="it">Progetti nati dalla curiosità, curati nei dettagli e aggiornati con passione.</span>
+              <span lang="en">Side projects born from curiosity, crafted with care and updated with passion.</span>
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="apps" aria-labelledby="apps-title">
+      <div class="container">
+        <h2 class="section-title" id="apps-title">
+          <span lang="it">Le app</span>
+          <span lang="en">The apps</span>
+        </h2>
+        <p class="section-sub">
+          <span lang="it">Le app di VibeLabz sono pubblicate su Google Play.</span>
+          <span lang="en">VibeLabz apps are published on Google Play.</span>
+        </p>
+        <div class="apps-grid">
+          <!--
+            Per aggiungere un'app, copia questo blocco e sostituisci i valori:
+
+          <article class="card app-card">
+            <img class="app-icon" src="/apps/nome-app/icon.png" alt="" width="64" height="64">
+            <div>
+              <h3>Nome App</h3>
+              <p>
+                <span lang="it">Descrizione breve in italiano.</span>
+                <span lang="en">Short description in English.</span>
+              </p>
+              <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vibelabz.nomeapp">Google Play</a>
+            </div>
+          </article>
+          -->
+          <article class="card app-card app-placeholder">
+            <div class="app-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6"/><path d="M10 3v6l-5 9a2 2 0 0 0 1.7 3h10.6a2 2 0 0 0 1.7-3l-5-9V3"/><circle cx="11" cy="15" r="1"/><circle cx="14" cy="17" r="1"/></svg>
+            </div>
+            <div>
+              <span class="tag"><span lang="it">In laboratorio</span><span lang="en">In the lab</span></span>
+              <h3><span lang="it">La prima app sta arrivando</span><span lang="en">The first app is on its way</span></h3>
+              <p>
+                <span lang="it">Sto lavorando alle prime app. Appena saranno disponibili su Google Play le troverai qui.</span>
+                <span lang="en">I'm working on the first apps. As soon as they are available on Google Play, you'll find them here.</span>
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <h2 class="section-title" id="about-title">
+          <span lang="it">Chi c'è dietro</span>
+          <span lang="en">Who's behind it</span>
+        </h2>
+        <div class="split">
+          <article class="card">
+            <p>
+              <span lang="it">Ciao, sono <strong>Simone Recchia</strong>. VibeLabz è il nome con cui pubblico le app che sviluppo nel tempo libero: piccoli strumenti e giochi nati da un'idea, da un bisogno quotidiano o semplicemente dalla voglia di sperimentare.</span>
+              <span lang="en">Hi, I'm <strong>Simone Recchia</strong>. VibeLabz is the name I use to publish the apps I build in my spare time: small tools and games born from an idea, an everyday need, or simply the urge to experiment.</span>
+            </p>
+            <p>
+              <span lang="it">Sono uno sviluppatore indipendente: ogni app è progettata, sviluppata e mantenuta da me. Se qualcosa non funziona o hai un'idea per migliorarla, mi fa sempre piacere saperlo.</span>
+              <span lang="en">I'm an independent developer: every app is designed, built and maintained by me. If something doesn't work, or you have an idea to make it better, I'm always happy to hear it.</span>
+            </p>
+            <ul class="stack-list" aria-label="Tecnologie / Technologies">
+              <li>React Native</li>
+              <li>TypeScript</li>
+              <li>Android</li>
+            </ul>
+          </article>
+          <article class="card contact-card" id="contact">
+            <h3 style="margin-top:0"><span lang="it">Supporto e contatti</span><span lang="en">Support &amp; contact</span></h3>
+            <p>
+              <span lang="it">Per assistenza su un'app, segnalazioni di bug, idee o domande sulla privacy scrivimi a:</span>
+              <span lang="en">For app support, bug reports, ideas or privacy questions, write to:</span>
+            </p>
+            <a class="email" href="mailto:recchia.sim@gmail.com?subject=VibeLabz">recchia.sim@gmail.com</a>
+            <ul>
+              <li><span lang="it">Indica il nome dell'app e il modello del telefono.</span><span lang="en">Include the app name and your phone model.</span></li>
+              <li><span lang="it">Di solito rispondo entro qualche giorno.</span><span lang="en">I usually reply within a few days.</span></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>© 2026 Simone Recchia · VibeLabz</span>
+      <nav aria-label="Footer">
+        <a href="/privacy/">Privacy Policy</a>
+        <a href="/privacy/#it-cancellazione" lang="it">Cancellazione dati</a>
+        <a href="/privacy/#en-data-deletion" lang="en">Data deletion</a>
+        <a href="mailto:recchia.sim@gmail.com?subject=VibeLabz"><span lang="it">Contatti</span><span lang="en">Contact</span></a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
