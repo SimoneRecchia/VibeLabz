@@ -26,9 +26,12 @@ La lingua si sceglie in automatico dal browser, con il selettore IT/EN o con `?l
 
 ## Pubblicazione
 
-1. **GitHub Pages**: nel repo, *Settings → Pages → Build and deployment*: *Source* = **Deploy from a branch**, scegli il branch e la cartella **/ (root)**.
-2. **DNS**: dal provider del dominio `simonerecchia.com` aggiungi un record **CNAME** con nome `vibelabz` e valore `simonerecchia.github.io`.
-3. Torna in *Settings → Pages*: il dominio `vibelabz.simonerecchia.com` viene letto dal file `CNAME`. Quando il controllo DNS è verde, attiva **Enforce HTTPS**.
+GitHub Pages pubblica il sito dal branch **`gh-pages`** (cartella root): per aggiornare il sito online, le modifiche vanno portate su `gh-pages`. Il dominio `vibelabz.simonerecchia.com` viene letto dal file `CNAME`.
+
+Configurazione una tantum:
+
+1. **DNS**: dal provider del dominio `simonerecchia.com` aggiungi un record **CNAME** con nome `vibelabz` e valore `simonerecchia.github.io`.
+2. In *Settings → Pages*, quando il controllo DNS è verde, attiva **Enforce HTTPS**.
 
 ## Aggiungere una nuova app
 
